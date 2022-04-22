@@ -1,26 +1,25 @@
-from copyreg import remove_extension
 import PIL.ImageGrab
 import pyautogui
 import time
 
-azul_fraco = (0, 39, 234)
-azul_forte = (71, 162, 257)
-laranja_fraco = (241, 146, 0)
-laranja_forte = (257, 190, 100)
-vermelho_fraco = (250, 5, 0)
-vermelho_forte = (254, 76, 74)
-roxo_fraco = (184, 0, 250)
-roxo_forte = (234, 102, 254)
-branco_fraco = (230, 230, 230)
-branco_forte = (252, 252, 252)
-rosa_fraco = (250, 94, 205)
-rosa_forte = (260, 183, 237)
-amarelo_fraco = (238, 226, 19)
-amarelo_forte = (257, 256, 122)
-verde_fraco = (0, 250, 8)
-verde_forte = (138, 254, 106)
+azul_fraco = (0, 4, 219)
+azul_forte = (86, 177, 272)
+laranja_fraco = (226, 131, 0)
+laranja_forte = (272, 205, 115)
+vermelho_fraco = (235, 0, 0)
+vermelho_forte = (269, 91, 89)
+roxo_fraco = (169, 0, 235)
+roxo_forte = (249, 117, 269)
+branco_fraco = (215, 215, 215)
+branco_forte = (267, 267, 267)
+rosa_fraco = (235, 79, 190)
+rosa_forte = (275, 198, 252)
+amarelo_fraco = (223, 211, 4)
+amarelo_forte = (272, 271, 137)
+verde_fraco = (0, 235, 0)
+verde_forte = (153, 269, 121)
 preto_fraco = (0, 0, 0)
-preto_forte = (30, 30, 30)
+preto_forte = (45, 45, 45)
 
 
 teste = True;
@@ -35,14 +34,14 @@ while (teste == True):
 # o captcha e suas alternativas nao possuem as cores identicas
 # dependendo do rgb do captcha, armazena em optionCaptcha a cor que sera a resposta
 
-    if captcha >= azul_fraco and captcha <= azul_forte:  # azul
-        optionCaptcha = (124, 144, 169)
+    if captcha.index(0) >= azul_fraco.index(0) and captcha <= azul_forte.index(0) and captcha.index(1) >= azul_fraco.index(1) and captcha <= azul_forte.index(1) and captcha.index(2) >= azul_fraco.index(2) and captcha <= azul_forte.index(2):
+        optionCaptcha = (124, 144, 169) # azul
 
-    if captcha >= laranja_fraco and captcha <= laranja_forte:  # laranja
-        optionCaptcha = (169, 134, 104)
+    if captcha >= laranja_fraco and captcha <= laranja_forte:  
+        optionCaptcha = (169, 134, 104) # laranja
 
-    if captcha >= vermelho_fraco and captcha <= vermelho_forte:  # vermelho
-        optionCaptcha = (144, 104, 104)
+    if captcha >= vermelho_fraco and captcha <= vermelho_forte: 
+        optionCaptcha = (144, 104, 104) # vermelho
 
     if captcha >= roxo_fraco and captcha <= roxo_forte:  # roxo
         optionCaptcha = (154, 113, 169)
@@ -94,7 +93,7 @@ while (teste == True):
     #if PIL.ImageGrab.grab().load()[111, 388] == (15, 11, 7):    #caso desconecte, para
     #    teste = False
 
-    #time.sleep(10)                                             #repete de 10 em 10min
+    time.sleep(5)                                             #repete de 10 em 10min
 
 
 
