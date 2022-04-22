@@ -1,25 +1,51 @@
 import PIL.ImageGrab
 
 # seleciona o pixel do captcha e descobre qual cor eh desta vez
-rgb = PIL.ImageGrab.grab().load()[712, 269]
-print(rgb)
+captcha = PIL.ImageGrab.grab().load()[707, 261]
 
 # o captcha e suas alternativas nao possuem as cores identicas
-# dependendo do rgb do captcha, armazena em colorOption a cor que sera a resposta
+# dependendo do rgb do captcha, armazena em optionCaptcha a cor que sera a resposta
 
-if rgb == (252, 163, 228):  # rosa
-    colorOption = (179, 133, 149)
+if captcha == (5, 97, 242):  # azul
+    optionCaptcha = (124, 144, 169)
 
-if rgb == (252, 163, 228):  # rosa
-    colorOption = (179, 133, 149)
+if captcha == (249, 187, 90):  # laranja
+    optionCaptcha = (169, 134, 104)
+
+if captcha == (252, 37, 27):  # vermelho
+    optionCaptcha = (144, 104, 104)
+
+if captcha == (224, 11, 252):  # roxo
+    optionCaptcha = (154, 113, 169)
+
+if captcha == (249, 249, 249):  # branco
+    optionCaptcha = (184, 184, 184)
+
+if captcha == (252, 179, 229):  # rosa
+    optionCaptcha = (179, 134, 149)
+
+if captcha == (246, 250, 4):  # amarelo
+    optionCaptcha = (174, 174, 104)
+
+if captcha == (163, 252, 58):  # verde
+    optionCaptcha = (134, 164, 93)
+
+if captcha == (6, 6, 6):  # preto
+    optionCaptcha = (93, 93, 93)
 
 
-# opcao do captcha 1: (x, y)
-# opcao do captcha 2: (x, y)
-# opcao do captcha 3: (x, y)
-# opcao do captcha 4: (x, y)
-# opcao do captcha 5: (x, y)
-# opcao do captcha 6: (x, y)
-# opcao do captcha 7: (x, y)
-# opcao do captcha 8: (x, y)
-# opcao do captcha 9: (x, y)
+#proximo: num range de tanto (9 opcoes), se o rgb da opcao 1 for igual ao optionCaptcha, clique
+#                                                    opcao 2, 3, ... 9
+
+#proximo: espera 10 minutos (proximo captcha), e repete infinitamente
+
+
+# opcao do captcha 1: (544, 303)
+# opcao do captcha 2: (581, 303)
+# opcao do captcha 3: (617, 303)
+# opcao do captcha 4: (653, 303)
+# opcao do captcha 5: (690, 303)
+# opcao do captcha 6: (725, 303)
+# opcao do captcha 7: (760, 303)
+# opcao do captcha 8: (796, 303)
+# opcao do captcha 9: (832, 303)
