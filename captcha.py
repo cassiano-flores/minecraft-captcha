@@ -37,29 +37,29 @@ while (teste == True):
     if captcha.index(0) >= azul_fraco.index(0) and captcha <= azul_forte.index(0) and captcha.index(1) >= azul_fraco.index(1) and captcha <= azul_forte.index(1) and captcha.index(2) >= azul_fraco.index(2) and captcha <= azul_forte.index(2):
         optionCaptcha = (124, 144, 169) # azul
 
-    if captcha >= laranja_fraco and captcha <= laranja_forte:  
+    if captcha.index(0) >= laranja_fraco.index(0) and captcha <= laranja_forte.index(0) and captcha.index(1) >= laranja_fraco.index(1) and captcha <= laranja_forte.index(1) and captcha.index(2) >= laranja_fraco.index(2) and captcha <= laranja_forte.index(2):  
         optionCaptcha = (169, 134, 104) # laranja
 
-    if captcha >= vermelho_fraco and captcha <= vermelho_forte: 
+    if captcha.index(0) >= vermelho_fraco.index(0) and captcha <= vermelho_forte.index(0) and captcha.index(1) >= vermelho_fraco.index(1) and captcha <= vermelho_forte.index(1) and captcha.index(2) >= vermelho_fraco.index(2) and captcha <= vermelho_forte.index(2): 
         optionCaptcha = (144, 104, 104) # vermelho
 
-    if captcha >= roxo_fraco and captcha <= roxo_forte:  # roxo
-        optionCaptcha = (154, 113, 169)
+    if captcha.index(0) >= roxo_fraco.index(0) and captcha <= roxo_forte.index(0) and captcha.index(1) >= roxo_fraco.index(1) and captcha <= roxo_forte.index(1) and captcha.index(2) >= roxo_fraco.index(2) and captcha <= roxo_forte.index(2):  
+        optionCaptcha = (154, 113, 169) # roxo
 
-    if captcha >= branco_fraco and captcha <= branco_forte:  # branco
-        optionCaptcha = (184, 184, 184)
+    if captcha.index(0) >= branco_fraco.index(0) and captcha <= branco_forte.index(0) and captcha.index(1) >= branco_fraco.index(1) and captcha <= branco_forte.index(1) and captcha.index(2) >= branco_fraco.index(2) and captcha <= branco_forte.index(2):  
+        optionCaptcha = (184, 184, 184) # branco
 
-    if captcha >= rosa_fraco and captcha <= rosa_forte:  # rosa
-        optionCaptcha = (179, 134, 149)
+    if captcha.index(0) >= rosa_fraco.index(0) and captcha <= rosa_forte.index(0) and captcha.index(1) >= rosa_fraco.index(1) and captcha <= rosa_forte.index(1) and captcha.index(2) >= rosa_fraco.index(2) and captcha <= rosa_forte.index(2):  
+        optionCaptcha = (179, 134, 149) # rosa
 
-    if captcha >= amarelo_fraco and captcha <= amarelo_forte:  # amarelo
-        optionCaptcha = (174, 174, 104)
+    if captcha.index(0) >= amarelo_fraco.index(0) and captcha <= amarelo_forte.index(0) and captcha.index(1) >= amarelo_fraco.index(1) and captcha <= amarelo_forte.index(1) and captcha.index(2) >= amarelo_fraco.index(2) and captcha <= amarelo_forte.index(2):  
+        optionCaptcha = (174, 174, 104) # amarelo
 
-    if captcha >= verde_fraco and captcha <= verde_forte:  # verde
-        optionCaptcha = (134, 164, 93)
+    if captcha.index(0) >= verde_fraco.index(0) and captcha <= verde_forte.index(0) and captcha.index(1) >= verde_fraco.index(1) and captcha <= verde_forte.index(1) and captcha.index(2) >= verde_fraco.index(2) and captcha <= verde_forte.index(2):  
+        optionCaptcha = (134, 164, 93) # verde
 
-    if captcha >= preto_fraco and captcha <= preto_forte:  # preto
-        optionCaptcha = (93, 93, 93)
+    if captcha.index(0) >= preto_fraco.index(0) and captcha <= preto_forte.index(0) and captcha.index(1) >= preto_fraco.index(1) and captcha <= preto_forte.index(1) and captcha.index(2) >= preto_fraco.index(2) and captcha <= preto_forte.index(2):  
+        optionCaptcha = (93, 93, 93) # preto
 
 
     if PIL.ImageGrab.grab().load()[544, 303] == optionCaptcha: #opcao 1
