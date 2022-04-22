@@ -5,7 +5,7 @@ import time
 # possiveis ranges, do fraco ao forte
 
 azul_fraco = (0, 4, 219)
-azul_forte = (86, 177, 272)
+azul_forte = (86, 200, 272)
 laranja_fraco = (226, 131, 0)
 laranja_forte = (272, 205, 115)
 vermelho_fraco = (235, 0, 0)
@@ -19,7 +19,7 @@ rosa_forte = (275, 198, 252)
 amarelo_fraco = (223, 211, 4)
 amarelo_forte = (272, 271, 137)
 verde_fraco = (0, 235, 0)
-verde_forte = (153, 269, 121)
+verde_forte = (170, 269, 121)
 preto_fraco = (0, 0, 0)
 preto_forte = (45, 45, 45)
 
@@ -66,29 +66,47 @@ while (teste == True):
 
     if PIL.ImageGrab.grab().load()[544, 303] == optionCaptcha: #opcao 1
         pyautogui.click(544, 303)
+        time.sleep(2)
+        pyautogui.click(544, 303)
 
     if PIL.ImageGrab.grab().load()[581, 303] == optionCaptcha: #opcao 2
+        pyautogui.click(581, 303)
+        time.sleep(2)
         pyautogui.click(581, 303)
 
     if PIL.ImageGrab.grab().load()[617, 303] == optionCaptcha: #opcao 3
         pyautogui.click(617, 303)
+        time.sleep(2)
+        pyautogui.click(617, 303)
 
     if PIL.ImageGrab.grab().load()[653, 303] == optionCaptcha: #opcao 4
+        pyautogui.click(653, 303)
+        time.sleep(2)
         pyautogui.click(653, 303)
 
     if PIL.ImageGrab.grab().load()[690, 303] == optionCaptcha: #opcao 5
         pyautogui.click(690, 303)
+        time.sleep(2)
+        pyautogui.click(690, 303)
 
     if PIL.ImageGrab.grab().load()[725, 303] == optionCaptcha: #opcao 6
+        pyautogui.click(725, 303)
+        time.sleep(2)
         pyautogui.click(725, 303)
 
     if PIL.ImageGrab.grab().load()[760, 303] == optionCaptcha: #opcao 7
         pyautogui.click(760, 303)
+        time.sleep(2)
+        pyautogui.click(760, 303)
 
     if PIL.ImageGrab.grab().load()[796, 303] == optionCaptcha: #opcao 8
         pyautogui.click(796, 303)
+        time.sleep(2)
+        pyautogui.click(796, 303)
 
     if PIL.ImageGrab.grab().load()[832, 303] == optionCaptcha: #opcao 9
+        pyautogui.click(832, 303)
+        time.sleep(2)
         pyautogui.click(832, 303)
 
 
