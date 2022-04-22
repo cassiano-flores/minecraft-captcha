@@ -2,6 +2,8 @@ import PIL.ImageGrab
 import pyautogui
 import time
 
+# possiveis ranges, do fraco ao forte
+
 azul_fraco = (0, 4, 219)
 azul_forte = (86, 177, 272)
 laranja_fraco = (226, 131, 0)
@@ -34,31 +36,31 @@ while (teste == True):
 # o captcha e suas alternativas nao possuem as cores identicas
 # dependendo do rgb do captcha, armazena em optionCaptcha a cor que sera a resposta
 
-    if captcha[0] >= azul_fraco[0] and captcha <= azul_forte[0] and captcha[1] >= azul_fraco[1] and captcha <= azul_forte[1] and captcha[2] >= azul_fraco[2] and captcha <= azul_forte[2]:
+    if captcha[0] >= azul_fraco[0] and captcha[0] <= azul_forte[0] and captcha[1] >= azul_fraco[1] and captcha[1] <= azul_forte[1] and captcha[2] >= azul_fraco[2] and captcha[2] <= azul_forte[2]:
         optionCaptcha = (124, 144, 169) # azul
 
-    if captcha[0] >= laranja_fraco[0] and captcha <= laranja_forte[0] and captcha[1] >= laranja_fraco[1] and captcha <= laranja_forte[1] and captcha[2] >= laranja_fraco[2] and captcha <= laranja_forte[2]:  
+    if captcha[0] >= laranja_fraco[0] and captcha[0] <= laranja_forte[0] and captcha[1] >= laranja_fraco[1] and captcha[1] <= laranja_forte[1] and captcha[2] >= laranja_fraco[2] and captcha[2] <= laranja_forte[2]:  
         optionCaptcha = (169, 134, 104) # laranja
 
-    if captcha[0] >= vermelho_fraco[0] and captcha <= vermelho_forte[0] and captcha[1] >= vermelho_fraco[1] and captcha <= vermelho_forte[1] and captcha[2] >= vermelho_fraco[2] and captcha <= vermelho_forte[2]: 
+    if captcha[0] >= vermelho_fraco[0] and captcha[0] <= vermelho_forte[0] and captcha[1] >= vermelho_fraco[1] and captcha[1] <= vermelho_forte[1] and captcha[2] >= vermelho_fraco[2] and captcha[2] <= vermelho_forte[2]: 
         optionCaptcha = (144, 104, 104) # vermelho
 
-    if captcha[0] >= roxo_fraco[0] and captcha <= roxo_forte[0] and captcha[1] >= roxo_fraco[1] and captcha <= roxo_forte[1] and captcha[2] >= roxo_fraco[2] and captcha <= roxo_forte[2]:  
+    if captcha[0] >= roxo_fraco[0] and captcha[0] <= roxo_forte[0] and captcha[1] >= roxo_fraco[1] and captcha[1] <= roxo_forte[1] and captcha[2] >= roxo_fraco[2] and captcha[2] <= roxo_forte[2]:  
         optionCaptcha = (154, 113, 169) # roxo
 
-    if captcha[0] >= branco_fraco[0] and captcha <= branco_forte[0] and captcha[1] >= branco_fraco[1] and captcha <= branco_forte[1] and captcha[2] >= branco_fraco[2] and captcha <= branco_forte[2]:  
+    if captcha[0] >= branco_fraco[0] and captcha[0] <= branco_forte[0] and captcha[1] >= branco_fraco[1] and captcha[1] <= branco_forte[1] and captcha[2] >= branco_fraco[2] and captcha[2] <= branco_forte[2]:  
         optionCaptcha = (184, 184, 184) # branco
 
-    if captcha[0] >= rosa_fraco[0] and captcha <= rosa_forte[0] and captcha[1] >= rosa_fraco[1] and captcha <= rosa_forte[1] and captcha[2] >= rosa_fraco[2] and captcha <= rosa_forte[2]:  
+    if captcha[0] >= rosa_fraco[0] and captcha[0] <= rosa_forte[0] and captcha[1] >= rosa_fraco[1] and captcha[1] <= rosa_forte[1] and captcha[2] >= rosa_fraco[2] and captcha[2] <= rosa_forte[2]:  
         optionCaptcha = (179, 134, 149) # rosa
 
-    if captcha[0] >= amarelo_fraco[0] and captcha <= amarelo_forte[0] and captcha[1] >= amarelo_fraco[1] and captcha <= amarelo_forte[1] and captcha[2] >= amarelo_fraco[2] and captcha <= amarelo_forte[2]:  
+    if captcha[0] >= amarelo_fraco[0] and captcha[0] <= amarelo_forte[0] and captcha[1] >= amarelo_fraco[1] and captcha[1] <= amarelo_forte[1] and captcha[2] >= amarelo_fraco[2] and captcha[2] <= amarelo_forte[2]:  
         optionCaptcha = (174, 174, 104) # amarelo
 
-    if captcha[0] >= verde_fraco[0] and captcha <= verde_forte[0] and captcha[1] >= verde_fraco[1] and captcha <= verde_forte[1] and captcha[2] >= verde_fraco[2] and captcha <= verde_forte[2]:  
+    if captcha[0] >= verde_fraco[0] and captcha[0] <= verde_forte[0] and captcha[1] >= verde_fraco[1] and captcha[1] <= verde_forte[1] and captcha[2] >= verde_fraco[2] and captcha[2] <= verde_forte[2]:  
         optionCaptcha = (134, 164, 93) # verde
 
-    if captcha[0] >= preto_fraco[0] and captcha <= preto_forte[0] and captcha[1] >= preto_fraco[1] and captcha <= preto_forte[1] and captcha[2] >= preto_fraco[2] and captcha <= preto_forte[2]:  
+    if captcha[0] >= preto_fraco[0] and captcha[0] <= preto_forte[0] and captcha[1] >= preto_fraco[1] and captcha[1] <= preto_forte[1] and captcha[2] >= preto_fraco[2] and captcha[2] <= preto_forte[2]:  
         optionCaptcha = (93, 93, 93) # preto
 
 
@@ -90,10 +92,7 @@ while (teste == True):
         pyautogui.click(832, 303)
 
 
-    #if PIL.ImageGrab.grab().load()[111, 388] == (15, 11, 7):    #caso desconecte, para
-    #    teste = False
-
-    time.sleep(5)                                             #repete de 10 em 10min
+    time.sleep(5)                                               
 
 
 
