@@ -2,6 +2,10 @@ import PIL.ImageGrab
 import pyautogui
 import time
 
+azul_fraco = (0, 39, 234)
+azul_forte = (71, 162, 257)
+
+
 teste = True;
 while (teste == True):
 
@@ -14,7 +18,7 @@ while (teste == True):
 # o captcha e suas alternativas nao possuem as cores identicas
 # dependendo do rgb do captcha, armazena em optionCaptcha a cor que sera a resposta
 
-    if captcha >= (0, 39, 234) and captcha <= (71, 162, 257):  # azul
+    if captcha >= azul_fraco and captcha <= azul_forte:  # azul
         optionCaptcha = (124, 144, 169)
 
     if captcha >= (241, 146, 0) and captcha <= (257, 190, 100):  # laranja
@@ -70,10 +74,10 @@ while (teste == True):
         pyautogui.click(832, 303)
 
 
-    if PIL.ImageGrab.grab().load()[111, 388] == (15, 11, 7):    #caso desconecte, para
-        teste = False
+    #if PIL.ImageGrab.grab().load()[111, 388] == (15, 11, 7):    #caso desconecte, para
+    #    teste = False
 
-    time.sleep(600)                                             #repete de 10 em 10min
+    #time.sleep(10)                                             #repete de 10 em 10min
 
 
 
