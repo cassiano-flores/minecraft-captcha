@@ -14,31 +14,31 @@ while (teste == True):
 # o captcha e suas alternativas nao possuem as cores identicas
 # dependendo do rgb do captcha, armazena em optionCaptcha a cor que sera a resposta
 
-    if captcha == (5, 97, 242):  # azul
+    if captcha >= (0, 39, 234) and captcha <= (71, 162, 257):  # azul
         optionCaptcha = (124, 144, 169)
 
-    if captcha == (249, 187, 90):  # laranja
+    if captcha >= (241, 146, 0) and captcha <= (257, 190, 100):  # laranja
         optionCaptcha = (169, 134, 104)
 
-    if captcha == (252, 37, 27):  # vermelho
+    if captcha >= (250, 5, 0) and captcha <= (254, 76, 74):  # vermelho
         optionCaptcha = (144, 104, 104)
 
-    if captcha == (224, 11, 252):  # roxo
+    if captcha >= (184, 0, 250) and captcha <= (234, 102, 254):  # roxo
         optionCaptcha = (154, 113, 169)
 
-    if captcha == (249, 249, 249):  # branco
+    if captcha >= (230, 230, 230) and captcha <= (252, 252, 252):  # branco
         optionCaptcha = (184, 184, 184)
 
-    if captcha == (252, 179, 229):  # rosa
+    if captcha >= (250, 94, 205) and captcha <= (260, 183, 237):  # rosa
         optionCaptcha = (179, 134, 149)
 
-    if captcha == (246, 250, 4):  # amarelo
+    if captcha >= (238, 226, 19) and captcha <= (257, 256, 122):  # amarelo
         optionCaptcha = (174, 174, 104)
 
-    if captcha == (163, 252, 58):  # verde
+    if captcha >= (0, 250, 8) and captcha <= (138, 254, 106):  # verde
         optionCaptcha = (134, 164, 93)
 
-    if captcha == (6, 6, 6):  # preto
+    if captcha >= (0, 0, 0) and captcha <= (30, 30, 30):  # preto
         optionCaptcha = (93, 93, 93)
 
 
